@@ -14,6 +14,9 @@
 		D1100B381D989C9B00860378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1100B361D989C9B00860378 /* LaunchScreen.storyboard */; };
 		D1100B431D989C9B00860378 /* adventure_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B421D989C9B00860378 /* adventure_iosTests.swift */; };
 		D1100B4E1D989C9B00860378 /* adventure_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B4D1D989C9B00860378 /* adventure_iosUITests.swift */; };
+		D1100B5C1D98A18200860378 /* Adventurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B5B1D98A18200860378 /* Adventurer.swift */; };
+		D1100B5D1D98A18200860378 /* Adventurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B5B1D98A18200860378 /* Adventurer.swift */; };
+		D1100B671D98A7E200860378 /* adventurerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B651D98A77B00860378 /* adventurerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		D1100B491D989C9B00860378 /* adventure_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adventure_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1100B4D1D989C9B00860378 /* adventure_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adventure_iosUITests.swift; sourceTree = "<group>"; };
 		D1100B4F1D989C9B00860378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1100B5B1D98A18200860378 /* Adventurer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adventurer.swift; sourceTree = "<group>"; };
+		D1100B651D98A77B00860378 /* adventurerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adventurerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,7 @@
 		D1100B2C1D989C9B00860378 /* adventure_ios */ = {
 			isa = PBXGroup;
 			children = (
+				D1100B5E1D98A20600860378 /* models */,
 				D1100B2D1D989C9B00860378 /* AppDelegate.swift */,
 				D1100B2F1D989C9B00860378 /* ViewController.swift */,
 				D1100B311D989C9B00860378 /* Main.storyboard */,
@@ -112,6 +118,7 @@
 			children = (
 				D1100B421D989C9B00860378 /* adventure_iosTests.swift */,
 				D1100B441D989C9B00860378 /* Info.plist */,
+				D1100B651D98A77B00860378 /* adventurerTest.swift */,
 			);
 			path = adventure_iosTests;
 			sourceTree = "<group>";
@@ -123,6 +130,14 @@
 				D1100B4F1D989C9B00860378 /* Info.plist */,
 			);
 			path = adventure_iosUITests;
+			sourceTree = "<group>";
+		};
+		D1100B5E1D98A20600860378 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D1100B5B1D98A18200860378 /* Adventurer.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1100B301D989C9B00860378 /* ViewController.swift in Sources */,
+				D1100B5C1D98A18200860378 /* Adventurer.swift in Sources */,
 				D1100B2E1D989C9B00860378 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1100B431D989C9B00860378 /* adventure_iosTests.swift in Sources */,
+				D1100B5D1D98A18200860378 /* Adventurer.swift in Sources */,
+				D1100B671D98A7E200860378 /* adventurerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +523,7 @@
 				D1100B541D989C9B00860378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1100B551D989C9B00860378 /* Build configuration list for PBXNativeTarget "adventure_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +532,7 @@
 				D1100B571D989C9B00860378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1100B581D989C9B00860378 /* Build configuration list for PBXNativeTarget "adventure_iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +541,7 @@
 				D1100B5A1D989C9B00860378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
