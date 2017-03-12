@@ -17,6 +17,8 @@
 		D1100B5C1D98A18200860378 /* Adventurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B5B1D98A18200860378 /* Adventurer.swift */; };
 		D1100B5D1D98A18200860378 /* Adventurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B5B1D98A18200860378 /* Adventurer.swift */; };
 		D1100B671D98A7E200860378 /* adventurerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B651D98A77B00860378 /* adventurerTest.swift */; };
+		D1C0A7E41E75ACB700BF279D /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */; };
+		D1C0A7E71E75B45500BF279D /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7E61E75B45500BF279D /* AlertHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		D1100B4F1D989C9B00860378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1100B5B1D98A18200860378 /* Adventurer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adventurer.swift; sourceTree = "<group>"; };
 		D1100B651D98A77B00860378 /* adventurerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adventurerTest.swift; sourceTree = "<group>"; };
+		D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
+		D1C0A7E61E75B45500BF279D /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +106,10 @@
 		D1100B2C1D989C9B00860378 /* adventure_ios */ = {
 			isa = PBXGroup;
 			children = (
+				D1C0A7E51E75B42F00BF279D /* Helpers */,
+				D1C0A7E21E75AC5F00BF279D /* ViewControllers */,
 				D1100B5E1D98A20600860378 /* models */,
 				D1100B2D1D989C9B00860378 /* AppDelegate.swift */,
-				D1100B2F1D989C9B00860378 /* ViewController.swift */,
 				D1100B311D989C9B00860378 /* Main.storyboard */,
 				D1100B341D989C9B00860378 /* Assets.xcassets */,
 				D1100B361D989C9B00860378 /* LaunchScreen.storyboard */,
@@ -138,6 +143,23 @@
 				D1100B5B1D98A18200860378 /* Adventurer.swift */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		D1C0A7E21E75AC5F00BF279D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1100B2F1D989C9B00860378 /* ViewController.swift */,
+				D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D1C0A7E51E75B42F00BF279D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D1C0A7E61E75B45500BF279D /* AlertHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +225,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Raoni Valadares";
 				TargetAttributes = {
 					D1100B291D989C9A00860378 = {
@@ -277,6 +299,8 @@
 				D1100B301D989C9B00860378 /* ViewController.swift in Sources */,
 				D1100B5C1D98A18200860378 /* Adventurer.swift in Sources */,
 				D1100B2E1D989C9B00860378 /* AppDelegate.swift in Sources */,
+				D1C0A7E71E75B45500BF279D /* AlertHelper.swift in Sources */,
+				D1C0A7E41E75ACB700BF279D /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +375,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -401,6 +426,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
