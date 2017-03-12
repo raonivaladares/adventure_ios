@@ -1,6 +1,6 @@
 import Foundation
 
-class Adventurer {
+struct Adventurer {
   var name: String
   
   // MARK: Inits

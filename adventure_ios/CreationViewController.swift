@@ -12,7 +12,11 @@ class CreationViewController: UIViewController {
       return
     }
     
-    let adventure = Adventurer(name: name)
-    print("TODO: Save: \(adventure)")
+    if let adventure = Adventurer(name: name) {
+      DataManager.saveAdventure(adventurer: adventure)
+      print("saved")
+    } else {
+      AlertHelper.message(viewController: self, title: "Error", message: "Unkwon error")
+    }
   }
 }
