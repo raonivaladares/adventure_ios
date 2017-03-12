@@ -12,7 +12,10 @@ class adventurerTest: XCTestCase {
     }
     
     func testInit() {
-        let adventurer = Adventurer(name: "test_name")
-        XCTAssertEqual(adventurer.name, "test_name")
+        let adventurerSucess = Adventurer(name: "test_name")
+        XCTAssertEqual(adventurerSucess?.name, "test_name")
+      
+      let adventurerFailEmpty = Adventurer(name: "")
+      XCTAssertNil(adventurerFailEmpty)
     }
 }

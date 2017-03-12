@@ -4,7 +4,7 @@ class CreationViewController: UIViewController {
   
   @IBOutlet private weak var nameTextField: UITextField!
   
-  
+  // MARK: Action handles
   @IBAction func doneAction() {
     guard let name = nameTextField.text, !name.isEmpty else {
       print("Name fail")
@@ -12,7 +12,6 @@ class CreationViewController: UIViewController {
       return
     }
     
-    print("Name pass: \(name)")
     let adventure = Adventurer(name: name)
     print("TODO: Save: \(adventure)")
   }

@@ -121,9 +121,9 @@
 		D1100B411D989C9B00860378 /* adventure_iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				D1C0A7EA1E75BC6100BF279D /* Model */,
 				D1100B421D989C9B00860378 /* adventure_iosTests.swift */,
 				D1100B441D989C9B00860378 /* Info.plist */,
-				D1100B651D98A77B00860378 /* adventurerTest.swift */,
 			);
 			path = adventure_iosTests;
 			sourceTree = "<group>";
@@ -160,6 +160,14 @@
 				D1C0A7E61E75B45500BF279D /* AlertHelper.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D1C0A7EA1E75BC6100BF279D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1100B651D98A77B00860378 /* adventurerTest.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
