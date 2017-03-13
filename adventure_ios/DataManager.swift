@@ -1,14 +1,14 @@
 import Foundation
 
-struct DataManager {
-  static func saveAdventure(adventurer: Adventurer) {
-    UserDefaults.standard.set(adventurer.name, forKey: "adventurer_name")
+struct DataManager {  
+  static func save(key: String, data: String) {
+    UserDefaults.standard.set(data, forKey: key)
   }
   
-  static func loadAdventure(adventurer: Adventurer) -> Adventurer? {
-    guard let name = UserDefaults.standard.string(forKey: "adventurer_name") else {
+  static func load(key: String) -> String? {
+    guard let data = UserDefaults.standard.string(forKey: key) else {
       return nil
     }
-    return Adventurer(name: name)
+    return data
   }
 }
