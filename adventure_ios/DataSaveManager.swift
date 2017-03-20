@@ -1,6 +1,6 @@
 import Foundation
 
-struct DataManager {  
+struct DataManager {
   static func save(key: String, data: String) {
     UserDefaults.standard.set(data, forKey: key)
   }

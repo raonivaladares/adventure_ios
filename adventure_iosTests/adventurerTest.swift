@@ -27,5 +27,4 @@ class adventurerTest: XCTestCase {
     XCTAssertEqual(current?.name, "test_name")
     
   }
-  
 }

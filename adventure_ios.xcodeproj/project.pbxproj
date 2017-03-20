@@ -17,9 +17,13 @@
 		D1100B5C1D98A18200860378 /* Adventurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B5B1D98A18200860378 /* Adventurer.swift */; };
 		D1100B5D1D98A18200860378 /* Adventurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B5B1D98A18200860378 /* Adventurer.swift */; };
 		D1100B671D98A7E200860378 /* adventurerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1100B651D98A77B00860378 /* adventurerTest.swift */; };
+		D1260F0F1E7D8FA500E00016 /* LoadVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1260F0E1E7D8FA500E00016 /* LoadVIewController.swift */; };
+		D1260F101E7ED66700E00016 /* DataSaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7EB1E76012600BF279D /* DataSaveManager.swift */; };
+		D1260F121E7EFCC500E00016 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1260F111E7EFCC500E00016 /* Game.storyboard */; };
+		D1260F141E7F56CD00E00016 /* LoopGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1260F131E7F56CD00E00016 /* LoopGameViewController.swift */; };
 		D1C0A7E41E75ACB700BF279D /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */; };
 		D1C0A7E71E75B45500BF279D /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7E61E75B45500BF279D /* AlertHelper.swift */; };
-		D1C0A7EC1E76012600BF279D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7EB1E76012600BF279D /* DataManager.swift */; };
+		D1C0A7EC1E76012600BF279D /* DataSaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7EB1E76012600BF279D /* DataSaveManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +59,12 @@
 		D1100B4F1D989C9B00860378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1100B5B1D98A18200860378 /* Adventurer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adventurer.swift; sourceTree = "<group>"; };
 		D1100B651D98A77B00860378 /* adventurerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adventurerTest.swift; sourceTree = "<group>"; };
+		D1260F0E1E7D8FA500E00016 /* LoadVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadVIewController.swift; sourceTree = "<group>"; };
+		D1260F111E7EFCC500E00016 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Game.storyboard; path = ../Game.storyboard; sourceTree = "<group>"; };
+		D1260F131E7F56CD00E00016 /* LoopGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopGameViewController.swift; sourceTree = "<group>"; };
 		D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		D1C0A7E61E75B45500BF279D /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
-		D1C0A7EB1E76012600BF279D /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = adventure_ios/DataManager.swift; sourceTree = "<group>"; };
+		D1C0A7EB1E76012600BF279D /* DataSaveManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSaveManager.swift; path = adventure_ios/DataSaveManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +120,7 @@
 				D1C0A7E21E75AC5F00BF279D /* ViewControllers */,
 				D1100B5E1D98A20600860378 /* models */,
 				D1100B2D1D989C9B00860378 /* AppDelegate.swift */,
+				D1260F111E7EFCC500E00016 /* Game.storyboard */,
 				D1100B311D989C9B00860378 /* Main.storyboard */,
 				D1100B341D989C9B00860378 /* Assets.xcassets */,
 				D1100B361D989C9B00860378 /* LaunchScreen.storyboard */,
@@ -153,6 +161,8 @@
 			children = (
 				D1100B2F1D989C9B00860378 /* ViewController.swift */,
 				D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */,
+				D1260F0E1E7D8FA500E00016 /* LoadVIewController.swift */,
+				D1260F131E7F56CD00E00016 /* LoopGameViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -176,7 +186,7 @@
 		D1C0A7ED1E76043900BF279D /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				D1C0A7EB1E76012600BF279D /* DataManager.swift */,
+				D1C0A7EB1E76012600BF279D /* DataSaveManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -291,6 +301,7 @@
 				D1100B381D989C9B00860378 /* LaunchScreen.storyboard in Resources */,
 				D1100B351D989C9B00860378 /* Assets.xcassets in Resources */,
 				D1100B331D989C9B00860378 /* Main.storyboard in Resources */,
+				D1260F121E7EFCC500E00016 /* Game.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1100B301D989C9B00860378 /* ViewController.swift in Sources */,
-				D1C0A7EC1E76012600BF279D /* DataManager.swift in Sources */,
+				D1260F0F1E7D8FA500E00016 /* LoadVIewController.swift in Sources */,
+				D1260F141E7F56CD00E00016 /* LoopGameViewController.swift in Sources */,
+				D1C0A7EC1E76012600BF279D /* DataSaveManager.swift in Sources */,
 				D1100B5C1D98A18200860378 /* Adventurer.swift in Sources */,
 				D1100B2E1D989C9B00860378 /* AppDelegate.swift in Sources */,
 				D1C0A7E71E75B45500BF279D /* AlertHelper.swift in Sources */,
@@ -328,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1260F101E7ED66700E00016 /* DataSaveManager.swift in Sources */,
 				D1100B431D989C9B00860378 /* adventure_iosTests.swift in Sources */,
 				D1100B5D1D98A18200860378 /* Adventurer.swift in Sources */,
 				D1100B671D98A7E200860378 /* adventurerTest.swift in Sources */,
