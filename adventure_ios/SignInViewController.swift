@@ -27,12 +27,13 @@ class SingInViewController: UIViewController {
 		let textField = UITextField()
 		textField.font = UIFont.systemFont(ofSize: 15)
 		textField.placeholder = "Enter your email"
-		textField.borderStyle = UITextBorderStyle.roundedRect
-		textField.autocorrectionType = UITextAutocorrectionType.no
-		textField.keyboardType = UIKeyboardType.default
-		textField.returnKeyType = UIReturnKeyType.done
-		textField.clearButtonMode = UITextFieldViewMode.whileEditing;
-		textField.contentVerticalAlignment = UIControlContentVerticalAlignment.center
+		textField.borderStyle = .roundedRect
+		textField.autocorrectionType = .no
+		textField.keyboardType = .default
+		textField.returnKeyType = .done
+		textField.clearButtonMode = .whileEditing
+		textField.contentVerticalAlignment = .center
+		textField.translatesAutoresizingMaskIntoConstraints = false
 		
 		return textField
 	}()
@@ -41,12 +42,13 @@ class SingInViewController: UIViewController {
 		let textField = UITextField()
 		textField.font = UIFont.systemFont(ofSize: 15)
 		textField.placeholder = "Enter your email"
-		textField.borderStyle = UITextBorderStyle.roundedRect
-		textField.autocorrectionType = UITextAutocorrectionType.no
-		textField.keyboardType = UIKeyboardType.default
-		textField.returnKeyType = UIReturnKeyType.done
-		textField.clearButtonMode = UITextFieldViewMode.whileEditing;
-		textField.contentVerticalAlignment = UIControlContentVerticalAlignment.center
+		textField.borderStyle = .roundedRect
+		textField.autocorrectionType = .no
+		textField.keyboardType = .default
+		textField.returnKeyType = .done
+		textField.clearButtonMode = .whileEditing
+		textField.contentVerticalAlignment = .center
+		textField.translatesAutoresizingMaskIntoConstraints = false
 		
 		return textField
 	}()
@@ -54,6 +56,9 @@ class SingInViewController: UIViewController {
 	private let buttonRegister: UIButton = {
 		let button = UIButton()
 		button.setTitle("Register", for: .normal)
+		button.backgroundColor = .white
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.backgroundColor = .blue
 		
 		return button
 	}()
@@ -61,6 +66,9 @@ class SingInViewController: UIViewController {
 	private let buttonSignIn: UIButton = {
 		let button = UIButton()
 		button.setTitle("Sign in", for: .normal)
+		button.backgroundColor = .white
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.backgroundColor = .red
 		
 		return button
 	}()
@@ -80,7 +88,7 @@ class SingInViewController: UIViewController {
 		
 		let containerStackView = UIStackView()
 		containerStackView.axis = .vertical
-		containerStackView.spacing = 8
+		containerStackView.spacing = 12
 		containerStackView.translatesAutoresizingMaskIntoConstraints = false
 		
 		containerStackView.addArrangedSubview(emailTextField)
@@ -88,7 +96,8 @@ class SingInViewController: UIViewController {
 		
 		let buttonsStackView = UIStackView()
 		buttonsStackView.axis = .horizontal
-		buttonsStackView.spacing = 8
+		buttonsStackView.distribution = .fillEqually
+		buttonsStackView.spacing = 16
 		buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
 		
 		buttonsStackView.addArrangedSubview(buttonSignIn)
@@ -99,7 +108,7 @@ class SingInViewController: UIViewController {
 		contentView.addSubview(containerStackView)
 		
 		let contentViewHeightAnchor = contentView.heightAnchor.constraint(equalTo: view.heightAnchor)
-		contentViewHeightAnchor.priority = 250
+		contentViewHeightAnchor.priority = UILayoutPriority(rawValue: 250)
 		
 		NSLayoutConstraint.activate([
 			scrollView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -120,12 +129,9 @@ class SingInViewController: UIViewController {
 			imageCover.heightAnchor.constraint(equalToConstant: 200),
 			
 			containerStackView.topAnchor.constraint(equalTo: imageCover.bottomAnchor, constant: 32),
-			containerStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+			containerStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 32),
 			containerStackView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -16),
-			containerStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-			
+			containerStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -32),
 			])
 	}
-	
-	
 }

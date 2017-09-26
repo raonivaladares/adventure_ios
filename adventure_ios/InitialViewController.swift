@@ -80,7 +80,7 @@ class InitialViewController: UIViewController {
 		contentView.addSubview(buttonLoadGame)
 		
 		let contentViewHeightAnchor = contentView.heightAnchor.constraint(equalTo: view.heightAnchor)
-		contentViewHeightAnchor.priority = 250
+		contentViewHeightAnchor.priority = UILayoutPriority(rawValue: 250)
 		
 		NSLayoutConstraint.activate([
 			scrollView.topAnchor.constraint(equalTo: view.topAnchor),

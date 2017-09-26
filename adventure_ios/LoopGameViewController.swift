@@ -17,14 +17,14 @@ class LoopGameViewController: UIViewController {
       repeats: true)
   }
   
-  func tick() {
+  @objc func tick() {
 		timer.invalidate()
 		
 		timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
 		
   }
 	
-	func timerAction() {
+	@objc func timerAction() {
 		if seconds > 0 {
 			seconds -= 1
 		} else {
