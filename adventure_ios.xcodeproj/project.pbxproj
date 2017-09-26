@@ -21,10 +21,12 @@
 		D1260F101E7ED66700E00016 /* DataSaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7EB1E76012600BF279D /* DataSaveManager.swift */; };
 		D1260F121E7EFCC500E00016 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1260F111E7EFCC500E00016 /* Game.storyboard */; };
 		D1260F141E7F56CD00E00016 /* LoopGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1260F131E7F56CD00E00016 /* LoopGameViewController.swift */; };
+		D19C80611F734A4B0055AB43 /* LoadGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19C80601F734A4B0055AB43 /* LoadGameViewController.swift */; };
 		D1C0A2261F6B69B800784EE4 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A2251F6B69B800784EE4 /* InitialViewController.swift */; };
 		D1C0A7E41E75ACB700BF279D /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */; };
 		D1C0A7E71E75B45500BF279D /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7E61E75B45500BF279D /* AlertHelper.swift */; };
 		D1C0A7EC1E76012600BF279D /* DataSaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A7EB1E76012600BF279D /* DataSaveManager.swift */; };
+		D1CE04C31F79C10D006A61F2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CE04C21F79C10D006A61F2 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +65,12 @@
 		D1260F0E1E7D8FA500E00016 /* LoadVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadVIewController.swift; sourceTree = "<group>"; };
 		D1260F111E7EFCC500E00016 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Game.storyboard; path = ../Game.storyboard; sourceTree = "<group>"; };
 		D1260F131E7F56CD00E00016 /* LoopGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopGameViewController.swift; sourceTree = "<group>"; };
+		D19C80601F734A4B0055AB43 /* LoadGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadGameViewController.swift; sourceTree = "<group>"; };
 		D1C0A2251F6B69B800784EE4 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		D1C0A7E31E75ACB700BF279D /* CreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		D1C0A7E61E75B45500BF279D /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		D1C0A7EB1E76012600BF279D /* DataSaveManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSaveManager.swift; path = adventure_ios/DataSaveManager.swift; sourceTree = "<group>"; };
+		D1CE04C21F79C10D006A61F2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				D1C0A2251F6B69B800784EE4 /* InitialViewController.swift */,
+				D19C80601F734A4B0055AB43 /* LoadGameViewController.swift */,
+				D1CE04C21F79C10D006A61F2 /* SignInViewController.swift */,
 			);
 			name = Refactored;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CE04C31F79C10D006A61F2 /* SignInViewController.swift in Sources */,
 				D1100B301D989C9B00860378 /* ViewController.swift in Sources */,
 				D1260F0F1E7D8FA500E00016 /* LoadVIewController.swift in Sources */,
 				D1260F141E7F56CD00E00016 /* LoopGameViewController.swift in Sources */,
@@ -345,6 +352,7 @@
 				D1100B5C1D98A18200860378 /* Adventurer.swift in Sources */,
 				D1100B2E1D989C9B00860378 /* AppDelegate.swift in Sources */,
 				D1C0A7E71E75B45500BF279D /* AlertHelper.swift in Sources */,
+				D19C80611F734A4B0055AB43 /* LoadGameViewController.swift in Sources */,
 				D1C0A7E41E75ACB700BF279D /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,6 @@ class InitialViewController: UIViewController {
 		return view
 	}()
 	
-	
 	private let labelTitle: UILabel = {
 		let label = UILabel()
 		label.text = "Adventure"
@@ -39,6 +38,7 @@ class InitialViewController: UIViewController {
 		button.setTitle("New Game", for: .normal)
 		button.setTitleColor(.black, for: .normal)
 		button.backgroundColor = UIColor(red: 41/256, green: 128/256, blue: 185/256, alpha: 1)
+		button.addTarget(self, action: #selector(buttonTappedNewGame(_:)), for: .touchUpInside)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		
 		return button
@@ -49,17 +49,26 @@ class InitialViewController: UIViewController {
 		button.setTitle("Load Game", for: .normal)
 		button.setTitleColor(.black, for: .normal)
 		button.backgroundColor = UIColor(red: 41/256, green: 128/256, blue: 185/256, alpha: 1)
+		button.addTarget(self, action: #selector(buttonTappedLoadGame(_:)), for: .touchUpInside)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		
 		return button
 	}()
 	
+	// MARK: View life-cycle
 	override func viewDidLoad() {
+		super.viewDidLoad()
+		
 		view.backgroundColor = UIColor(red: 217/256, green: 219/256, blue: 205/256, alpha: 1)
 		
 		buildUI()
 	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+	}
+	
+	// MARK: Private methods
 	private func buildUI() {
 		view.addSubview(scrollView)
 		scrollView.addSubview(contentView)
@@ -107,5 +116,16 @@ class InitialViewController: UIViewController {
 			buttonLoadGame.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.4),
 			buttonLoadGame.heightAnchor.constraint(equalToConstant: 44),
 		])
+	}
+	
+	// MARK: Action handlers
+	@objc private func buttonTappedNewGame(_ sender : UIButton) {
+		let viewController = LoadGameViewController()
+		navigationController?.pushViewController(viewController, animated: true)
+	}
+	
+	@objc private func buttonTappedLoadGame(_ sender : UIButton) {
+		let viewController = LoadGameViewController()
+		navigationController?.pushViewController(viewController, animated: true)
 	}
 }
